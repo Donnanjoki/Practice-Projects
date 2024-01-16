@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(275, 100%, 97%);
+}
+
+/* header */
+header {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.background-desktop object {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+/* main element*/
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* accordion elements*/
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.accordion h2 {
+    font-size: 40px;
+    font-weight: 800;
+    display: block;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#accordion-item-4 {
+    border-bottom: none;
+}
+
+button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+
+}
+
+.accordion-item .accordion-header {
+    font-size: 14px;
+    Font-weight: 600;
+    color: hsl(292, 42%, 14%);
+
+}
+
+.accordion-content p {
+    font-size: 12px;
+    color: hsl(292, 16%, 49%);
+}
+
+/* footer and elements*/
+footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    background: hsl(292, 42%, 14%);
+    padding: 20px 40px;
+    min-height: 30px
+}
+
+
+
+footer .attribution {
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: rgb(177, 61, 235);
+    font-size: 16px;
+    font-weight: 600;
+}
