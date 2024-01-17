@@ -7,55 +7,52 @@ body {
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
-.wrapper {
+.content-wrapper {
     box-sizing: border-box;
-    min-height: 100%;
     display: flex;
     flex-direction: column;
     background-color: hsl(275, 100%, 97%);
 }
 
 /* header */
-header {
+.header-container {
     flex-grow: 0;
     flex-shrink: 0;
 }
 
+.background-desktop {
+    width: 100%;
+}
+
 .background-desktop object {
     background-size: cover;
-    height: 100%;
-    width: 100%;
-    left: 0;
     top: 0;
+    left: 0;
+    height: 100%;
 }
 
 
 /* main element*/
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+.accordion-wrapper {
+    max-width: 600px;
+    padding: 10px;
+    margin: 60px auto;
+    display: flex;
     flex-grow: 1;
+    flex-direction: column;
     background-color: white;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin: 20px auto;
-    width: 80%;
+
 }
 
-/* accordion elements*/
 
-.accordion {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 10px;
-}
-
-.accordion h2 {
+.accordion-wrapper h2 {
     font-size: 40px;
-    font-weight: 800;
+    font-weight: 600;
     display: block;
 }
 
@@ -67,30 +64,67 @@ main {
     border-bottom: none;
 }
 
-button {
+.accordion-item button {
     position: relative;
     display: block;
     text-align: left;
     width: 100%;
     padding: 1em 0;
-    font-size: 1.15rem;
+    font-size: 14px;
     font-weight: 400;
     border: none;
-    background: none;
     outline: none;
+    display: flex;
+    align-items: center;
+    background: transparent;
+}
 
+.accordion-wrapper button:hover,
+.accordion-wrapper button:focus {
+    cursor: pointer;
+    color: hsl(292, 42%, 14%);
+}
+
+.accordion-wrapper button:hover::after,
+.accordion-wrapper button:focus::after {
+    cursor: pointer;
+    border: 1px solid #e5e5e5;
+}
+
+.accordion-wrapper button span {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+
+button span .icon-2 {
+    display: none;
 }
 
 .accordion-item .accordion-header {
     font-size: 14px;
     Font-weight: 600;
     color: hsl(292, 42%, 14%);
+    padding: 20px;
 
 }
 
-.accordion-content p {
-    font-size: 12px;
+.accordion-content {
+    opacity: 0;
+    max-height: 0;
     color: hsl(292, 16%, 49%);
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion-content p {
+    font-size: 14px;
+    margin: 10px;
+    text-align: justify;
+
 }
 
 /* footer and elements*/
