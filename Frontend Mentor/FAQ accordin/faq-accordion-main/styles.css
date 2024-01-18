@@ -15,6 +15,9 @@ body {
     display: flex;
     flex-direction: column;
     background-color: hsl(275, 100%, 97%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 /* header */
@@ -25,6 +28,8 @@ body {
 
 .background-desktop {
     width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 
 .background-desktop object {
@@ -32,13 +37,14 @@ body {
     top: 0;
     left: 0;
     height: 100%;
+
 }
 
 
 /* main element*/
 .accordion-wrapper {
     max-width: 600px;
-    padding: 10px;
+    padding: 5px;
     margin: 60px auto;
     display: flex;
     flex-grow: 1;
@@ -46,7 +52,8 @@ body {
     background-color: white;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -133,7 +140,10 @@ footer {
     flex-shrink: 0;
     background: hsl(292, 42%, 14%);
     padding: 20px 40px;
-    min-height: 30px
+    min-height: 10px;
+    position: relative;
+    height: auto;
+    margin-top: 200px;
 }
 
 
