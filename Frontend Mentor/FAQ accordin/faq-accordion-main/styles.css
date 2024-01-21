@@ -73,7 +73,6 @@ body {
 
 .accordion-item button {
     position: relative;
-    display: block;
     text-align: left;
     width: 100%;
     padding: 1em 0;
@@ -110,9 +109,20 @@ button span .icon-2 {
     display: none;
 }
 
+.accordion-wrapper button.active {
+    color: hsl(292, 42%, 14%);
+}
+
+.accordion-wrapper button+.accordion-content {
+    opacity: 1;
+    max-height: 70px;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
 .accordion-item .accordion-header {
     font-size: 14px;
-    Font-weight: 600;
+    font-weight: 600;
     color: hsl(292, 42%, 14%);
     padding: 20px;
 
@@ -132,6 +142,11 @@ button span .icon-2 {
     margin: 10px;
     text-align: justify;
 
+}
+
+.accordion-content.open {
+    opacity: 1;
+    max-height: none;
 }
 
 /* footer and elements*/
