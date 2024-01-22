@@ -181,26 +181,43 @@ footer a {
 
 /* responsive features for the accordion*/
 
-@media only screen and (max-width: 600px) {
+/* Mobile styles*/
+@media only screen and (max-width: 375px) {
     .accordion-wrapper {
-        max-width: 100%;
-        margin: 20px;
+        max-width: 300px;
+        margin: 10px 30px;
     }
 
     .accordion-wrapper h2 {
-        font-size: 32px;
+        font-size: 25px;
+        font-weight: 600;
     }
 
     .accordion-item button span {
-        top: 5px;
+        right: -5px;
     }
 
-    .accordion-content {
-        max-height: none;
-        /* Ensure content is fully visible on small screens */
+    .accordion-item .accordion-header {
+        font-size: 12px;
+    }
+
+
+    .accordion-content p {
+        font-size: 11px;
+        margin: 4px;
+        text-align: justify;
+
     }
 
     footer {
-        margin-top: 20px;
+        margin-top: 80px;
+    }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 376px) {
+    .accordion-wrapper {
+        max-width: 450px;
+        margin: 60px auto;
     }
 }

@@ -39,8 +39,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/Donnanjoki/Practice-Projects/tree/main/Frontend%20Mentor/FAQ%20accordin/faq-accordion-main
+- Live Site URL: https://donnanjoki.github.io/Practice-Projects/Frontend%20Mentor/FAQ%20accordin/faq-accordion-main/index.html
 
 ### Built with
 
