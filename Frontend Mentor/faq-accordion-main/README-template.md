@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/Donnanjoki/Practice-Projects/tree/main/Frontend%20Mentor/FAQ%20accordin/faq-accordion-main
-- Live Site URL: https://donnanjoki.github.io/Practice-Projects/Frontend%20Mentor/FAQ%20accordin/faq-accordion-main/index.html
+- Solution URL: https://github.com/Donnanjoki/Practice-Projects/tree/main/Frontend%20Mentor/faq-accordion-main
+- Live Site URL: https://donnanjoki.github.io/Practice-Projects/Frontend%20Mentor/faq-accordion-main/index.html
 
 ### Built with
 
