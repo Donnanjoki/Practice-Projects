@@ -43,5 +43,6 @@ Your users should be able to:
 - Accessibility - Ensure your credit card UI is accessible to users with disabilities by following accessibility guidelines such as WCAG (Web Content Accessibility Guidelines). Use proper labels, alternative text, and appropriate color contrast to make the UI accessible for users with varying needs.
 
 - Security Assurance - Display security badges or messages to assure users that their credit card information is being handled securely. This helps build trust and confidence in the transaction process.
+  Source: https://baymard.com/blog/visually-reinforce-sensitive-fields
 
 - Mobile Optimization - this can be done by optimizing the credit card UI for mobile devices by making the input fields large enough for easy tapping, using mobile-friendly keyboards, ensuring responsive design
